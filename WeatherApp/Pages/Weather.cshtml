@@ -1,0 +1,17 @@
+﻿@page
+@model WeatherApp.Pages.WeatherModel
+@{
+    var myWeather = Model.Weather;
+
+    
+
+}
+
+<ul>
+    <li><img src="@myWeather.IconUrl"</li>
+    <li>Country: @myWeather.Country</li>
+    <li>Region: @myWeather.Region</li>
+    <li>Temperature: @myWeather.Temperature</li>
+    <li>Lat: @myWeather.Lat</li>
+    <li>Lon: @myWeather.Lon</li>
+</ul>

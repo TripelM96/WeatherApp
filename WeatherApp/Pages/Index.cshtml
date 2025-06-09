@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+    var cities = new string[] { "Bali", "Bangkok", "Paris", "Sydney", "Lisbon" };
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>to the amazing weather service</p>
+  </div>
+
+<ul>
+    @foreach(var city in cities)
+    {
+        <li><a href="/weather?region=@city">@city</a></li>
+    }
+
+    @* <li><<a href="/weather?region=bali">Bali</a></li>
+    <li><<a href="/weather?region=bangkok">Bangkok</a></li>
+    <li><<a href="/weather?region=paris">Paris</a></li>
+    <li><<a href="/weather?region=sydney">Sydney</a></li>
+    <li><<a href="/weather?region=Lisbon">Lisbon</a></li> *@
+    
+</ul>
